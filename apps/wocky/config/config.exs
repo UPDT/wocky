@@ -70,16 +70,16 @@ config :wocky,
   # Goth config
   goth_config: %{
     type: "service_account",
-    project_id: "my-project-1480497595993",
-    private_key_id: "b9d64bc1a6d8edda824eb2ab984c8238701818ea",
+    project_id: "tiny-robot",
+    private_key_id: "b23e820ca6b888fa3ae757224c0e086ba7b417aa",
     client_email:
-      "firebase-adminsdk-xrj66@my-project-1480497595993.iam.gserviceaccount.com",
-    client_id: "107308386875224786877",
+      "firebase-adminsdk-s17gk@tiny-robot.iam.gserviceaccount.com",
+    client_id: "103472073372008531669",
     auth_uri: "https://accounts.google.com/o/oauth2/auth",
     token_uri: "https://oauth2.googleapis.com/token",
     auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
     client_x509_cert_url:
-      "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xrj66%40my-project-1480497595993.iam.gserviceaccount.com"
+      "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-s17gk%40tiny-robot.iam.gserviceaccount.com"
   },
   goth_private_key: {:system, :string, "FIREBASE_PRIVATE_KEY", "dummy_key"},
 
