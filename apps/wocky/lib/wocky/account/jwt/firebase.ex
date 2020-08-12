@@ -5,7 +5,7 @@ defmodule Wocky.Account.JWT.Firebase do
 
   use GuardianFirebase,
     otp_app: :wocky,
-    project_id: "my-project-1480497595993"
+    project_id: "tiny-robot"
 
   alias Wocky.Account.Register
   alias Wocky.Account.User
