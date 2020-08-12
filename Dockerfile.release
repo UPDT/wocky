@@ -46,9 +46,9 @@ EXPOSE 8080 4369 9100
 
 # Deploy the application into the container
 ARG RELEASE_NAME=wocky
-# COPY ./tmp/artifacts/${RELEASE_NAME}.tar.gz ./
-RUN tar xfz /tmp/artifacts/${RELEASE_NAME}.tar.gz && \
-    rm -f /tmp/artifacts/${RELEASE_NAME}.tar.gz
+COPY ./tmp/artifacts/${RELEASE_NAME}.tar.gz ./
+RUN tar xfz ${RELEASE_NAME}.tar.gz && \
+    rm -f ${RELEASE_NAME}.tar.gz
 
 ENTRYPOINT ["bin/wocky"]
 # CMD "foreground"
