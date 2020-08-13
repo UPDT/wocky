@@ -13,8 +13,8 @@ config :wocky, Wocky.Location.GeoFence, visit_timeout_enabled: false
 
 config :wocky, :pigeon,
   apns: [
-    key_identifier: {:system, :string, "APNS_KEY_IDENTIFIER", "NBJ9A4785H"},
-    team_id: {:system, :string, "APNS_TEAM_ID", "W6M2PMRSBT"},
+    key_identifier: {:system, :string, "APNS_KEY_IDENTIFIER", "4VU8T5J99R"},
+    team_id: {:system, :string, "APNS_TEAM_ID", "TK276NLMBC"},
     mode: :prod
   ]
 

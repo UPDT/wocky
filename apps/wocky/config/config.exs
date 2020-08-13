@@ -12,7 +12,7 @@ config :wocky,
 
   # TROS file storage in test storage system
   tros_backend: {:system, :module, "WOCKY_TROS_STORE", Wocky.TROS.Store.Test},
-  tros_s3_bucket: {:system, "WOCKY_TROS_S3_BUCKET", "wocky-tros-test"},
+  tros_s3_bucket: {:system, "WOCKY_TROS_S3_BUCKET", "wocky-tros-test2"},
   tros_s3_region: {:system, "WOCKY_S3_REGION", "us-west-2"},
   tros_s3_server: {:system, "WOCKY_S3_SERVER", "s3.amazonaws.com"},
 
@@ -133,8 +133,8 @@ config :wocky, :pigeon,
        XXXXXXXX
        -----END PRIVATE KEY-----
        """},
-    key_identifier: "dummy-id",
-    team_id: "dummy-team",
+    key_identifier: "4VU8T5J99R",
+    team_id: "TK276NLMBC",
     mode: :dev
   ],
   fcm: [
