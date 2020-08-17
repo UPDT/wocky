@@ -11,7 +11,7 @@ config :wocky_api,
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :wocky_api, WockyAPI.Endpoint,
-  debug_errors: true,
-  code_reloader: true,
+  debug_errors: false,
+  code_reloader: false,
   check_origin: false,
   watchers: []
