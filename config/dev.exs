@@ -1,7 +1,25 @@
 use Mix.Config
 
-# Set a higher stacktrace during development. Avoid configuring such
-# in production as building large stacktraces may be expensive.
-config :phoenix, :stacktrace_depth, 20
+# format log timestamps as UTC
+config :sasl, :utc_log, true
+config :logger, :utc_log, true
 
-config :honeybadger, environment_name: :dev
+# Set the Honeybadger environment
+config :honeybadger, environment_name: "${HONEYBADGER_ENV}"
+
+# Log as JSON and turn off ANSI colors
+# config :logger, :console,
+#   colors: [enabled: false],
+#   format: {ExJsonLogger, :format},
+#   metadata: :all
+
+# config :libcluster,
+#   topologies: [
+#     k8s_wocky: [
+#       strategy: Cluster.Strategy.Kubernetes.DNS,
+#       config: [
+#         service: "wocky-private",
+#         application_name: "wocky"
+#       ]
+#     ]
+#   ]
